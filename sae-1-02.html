@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Projet 1.02 — Réseaux informatiques — Portfolio BUT R&T</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body class="pt">
+
+  <nav>
+    <a class="nav-logo" href="index.html">A. Otgon-erdene</a>
+    <ul class="nav-links">
+      <li><a href="index.html">Accueil</a></li>
+      <li><a href="index.html#presentation">Présentation</a></li>
+      <li><a href="saes.html" class="active">Projets</a></li>
+      <li><a href="Bilan.html">Bilans</a></li>
+    </ul>
+  </nav>
+
+  <div class="wrap">
+
+    <div class="detail-top">
+      <a class="back" href="saes.html">← Tous les projets</a>
+      <div class="detail-meta" style="margin-top:1.5rem">
+        <span class="comp-chip">RT1</span>
+        <span style="font-size:0.75rem;color:var(--light)">Semestre 1 &mdash; Groupe de 4</span>
+      </div>
+      <h1>S'initier aux<br><em>réseaux informatiques</em></h1>
+      <div class="tags" style="margin-top:1rem">
+        <span class="tag">AC11.01</span>
+        <span class="tag">AC11.02</span>
+        <span class="tag">AC11.03</span>
+        <span class="tag">AC11.04</span>
+        <span class="tag">AC11.05</span>
+        <span class="tag">AC11.06</span>
+      </div>
+    </div>
+
+    <div class="detail-body">
+
+      <!-- MAIN -->
+      <div>
+
+        <div class="d-section">
+          <div class="d-label">Contexte — Fibre&amp;Company</div>
+          <div class="d-text">
+            <span class="group-badge">👥 Groupe de 4 étudiants</span>
+            <p>
+              Nous avons été recrutés au sein de la société fictive <strong>Fibre&amp;Company</strong>,
+              spécialisée dans le déploiement de la fibre optique. La société devait doubler ses effectifs
+              et sa faible sécurité réseau mettait en péril son activité. Notre mission : concevoir et
+              implémenter un <strong>prototype de réseau amélioré</strong> avant sa mise en production,
+              en implémentant le maximum de fonctionnalités possible.
+            </p>
+          </div>
+        </div>
+
+        <div class="d-section">
+          <div class="d-label">Infrastructure existante</div>
+          <div class="infra-grid">
+            <div class="infra-card">
+              <h5>Matériel en place</h5>
+              <ul>
+                <li>60 postes utilisateurs</li>
+                <li>1 poste servant de serveur</li>
+                <li>2 switchs 48 ports non paramétrables</li>
+                <li>1 connexion 1 Gb (box fibre)</li>
+              </ul>
+            </div>
+            <div class="infra-card">
+              <h5>Services box</h5>
+              <ul>
+                <li>Cache DNS</li>
+                <li>DHCP</li>
+                <li>Routage LAN / WAN</li>
+              </ul>
+            </div>
+            <div class="infra-card" style="grid-column:1/-1">
+              <h5>Nouveau matériel disponible</h5>
+              <ul>
+                <li>Switches et routeurs paramétrables (matériel ancien mais configurable)</li>
+                <li>Permet l'implémentation de VLANs, ACL, routage inter-VLAN, etc.</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <div class="d-section">
+          <div class="d-label">Tâches &amp; priorisation</div>
+          <div class="d-text">
+            <p style="font-size:0.82rem;color:var(--mid);margin-bottom:1rem">
+              En cas de manque de temps, les tâches étaient à prioriser dans l'ordre suivant :
+            </p>
+            <ul class="prio-list">
+              <li><span class="prio-dot prio-h"></span>Segmentation du réseau — VLANs</li>
+              <li><span class="prio-dot prio-h"></span>Configuration des switches paramétrables</li>
+              <li><span class="prio-dot prio-h"></span>Routage inter-VLAN</li>
+              <li><span class="prio-dot prio-m"></span>Serveur DHCP dédié</li>
+              <li><span class="prio-dot prio-m"></span>Serveur DNS interne</li>
+              <li><span class="prio-dot prio-l"></span>Redondance et haute disponibilité</li>
+              <li><span class="prio-dot prio-l"></span>Documentation complète du réseau</li>
+            </ul>
+            <div style="display:flex;gap:1.5rem;margin-top:1rem;font-size:0.72rem;color:var(--light)">
+              <span style="display:flex;align-items:center;gap:0.35rem"><span class="prio-dot prio-h"></span>Priorité
+                haute</span>
+              <span style="display:flex;align-items:center;gap:0.35rem"><span class="prio-dot prio-m"></span>Priorité
+                moyenne</span>
+              <span style="display:flex;align-items:center;gap:0.35rem"><span class="prio-dot prio-l"></span>Si temps
+                disponible</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="d-section">
+          <div class="d-label">Réalisations &amp; traces produites</div>
+          <div class="d-text">
+            <ul>
+              <li>
+                Maquette du réseau : Élaboration d’un diagramme de Gantt, création des schémas logiques et physiques, et
+                configuration initiale des équipements (switches, routeur, affectation des VLANs).</li>
+              <li>TP noté : Mise en place d’une machine virtuelle via VirtualBox, configuration du SSH et réalisation de
+                tests pratiques (vérification du fonctionnement du réseau, du DHCP et du routage).</li>
+            </ul>
+
+
+            <div class="img-placeholder">
+              <img class="gallery-img" src="img/sae102-1.png" alt="Schéma logique" style="width:25%;max-width:300px">
+              <img class="gallery-img" src="img/sae102-2.png" alt="Schéma physique" style="width:25%;max-width:300px">
+              <img class="gallery-img" src="img/sae102-3.png" alt="Diagramme de Gantt" style="width:25%;max-width:300px">
+              <div style="margin-top:1rem; width:100%; text-align:center;">
+                <a class="btn btn-outline btn-small" href="pdf/notice-switch.pdf" download="notice-switch.pdf">Télécharger la notice switch cisco</a>
+                <a class="btn btn-outline btn-small" href="pdf/notice_tftp.pdf" download="notice_tftp.pdf">Télécharger la notice tftp</a>
+              </div>
+            </div>
+
+            
+
+            <!-- The Modal -->
+            <div id="myModal" class="modal">
+              <span class="close">&times;</span>
+              <img class="modal-content" id="img01">
+              <div id="caption"></div>
+            </div>
+
+            <script>
+              const modal = document.getElementById("myModal");
+              const modalImg = document.getElementById("img01");
+              const captionText = document.getElementById("caption");
+              const images = document.querySelectorAll(".gallery-img");
+              images.forEach(img => {
+                img.onclick = function () {
+                  modal.style.display = "block";
+                  modalImg.src = this.src;
+                  captionText.innerHTML = this.alt;
+                }
+              });
+
+              const span = document.querySelector(".close");
+
+              span.onclick = function () {
+
+                modal.style.display = "none";
+              }
+
+            </script>
+          </div>
+        </div>
+
+        <div class="d-section">
+          <div class="d-label">Résultat</div>
+          <div class="d-text">
+            <p>
+              Ce projet m’a permis de mieux comprendre les fondamentaux des réseaux informatiques,
+              d’acquérir des compétences pratiques en configuration de réseau et de découvrir les
+              défis liés à la gestion d’une infrastructure réseau dans un contexte professionnel.
+            </p>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- SIDEBAR -->
+      <aside class="d-sidebar">
+
+        <div class="sidebar-block">
+          <div class="sidebar-label">Apprentissages critiques</div>
+          <ul>
+            <li>AC11.01 — Lois fondamentales de l'électricité</li>
+            <li>AC11.02 — Architecture des systèmes numériques</li>
+            <li>AC11.03 — Configurer le réseau local</li>
+            <li>AC11.04 — Systèmes d'exploitation</li>
+            <li>AC11.05 — Identifier les dysfonctionnements</li>
+            <li>AC11.06 — Installer un poste client</li>
+          </ul>
+        </div>
+
+        <div class="sidebar-block">
+          <div class="sidebar-label">Technologies</div>
+          <ul>
+            <li>Cisco IOS</li>
+            <li>VLANs / 802.1Q</li>
+            <li>DHCP / DNS</li>
+            <li>Packet Tracer</li>
+            <li>Câblage RJ45</li>
+          </ul>
+        </div>
+
+
+
+      </aside>
+
+    </div>
+
+    <div class="page-nav">
+      <a href="sae-1-01.html">← Projet 1.01 — Hygiène informatique</a>
+      <a href="sae-1-03.html">Projet 1.03 — Dispositif de transmission →</a>
+    </div>
+
+  </div>
+
+<footer class="site-footer">
+  Portfolio Otgon-erdene 2026
+</footer>
+
+</body>
+
+</html>
